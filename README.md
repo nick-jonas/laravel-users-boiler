@@ -1,25 +1,19 @@
-## Laravel PHP Framework
+## Laravel User Boilerplate
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This is a boilerplate framework built on top of [Laravel](http://laravel.com/docs) for creating user profiles, using social and manual login/signup methods.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+## Getting Started
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+1. Clone this repository ```git clone git@github.com:nick-jonas/laravel-users-boiler.git```
+2.  ```composer install``` 
+3.  Point your server to the ```/public``` directory
+4.  Run ```chmod -R 777 app/storage``` to make storage writable
+5.  By default, it runs the production environment.  To create a new environment, follow [these instructions](http://laravel.com/docs/configuration#environment-configuration)
+6.  Edit ```config/database.php``` with your database settings.
+7.  ```php artisan migrate``` to migrate the DB schema
+8.  ```php artisan db:seed``` to seed sample data
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
+## Laravel Official Documentation
 
 Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
-
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
