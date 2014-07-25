@@ -1,3 +1,6 @@
+@extends('layouts.master')
+@section('content')
+
 {{ Form::open(array('url' => 'users/signup')) }}
 <h1>@lang('users.signup')</h1>
 
@@ -32,3 +35,5 @@
 
 <p>{{ Form::submit(Lang::get('users.signup')) }}</p>
 {{ Form::close() }}
+
+@stop

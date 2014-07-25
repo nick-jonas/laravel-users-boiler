@@ -10,8 +10,7 @@ class UserController extends \BaseController {
   public function getIndex()
   {
     $users = DB::table('users')->get();
-    $this->layout = View::make('layouts.master');
-    $this->layout->content = View::make('users.index')->with( 'users', $users);
+    return View::make('users.index')->with( 'users', $users);
   }
 
   /**
@@ -27,8 +26,7 @@ class UserController extends \BaseController {
       }
 
       $invalidLogin = Session::get('message');
-      $this->layout = View::make('layouts.master');
-      $this->layout->content = View::make('users.login')->with('invalidLogin', $invalidLogin);
+      return View::make('users.login')->with('invalidLogin', $invalidLogin);
   }
 
   /**
@@ -86,8 +84,7 @@ class UserController extends \BaseController {
     {
         return Redirect::to('/');
     }
-    $this->layout = View::make('layouts.master');
-    $this->layout->content = View::make('users.signup');
+    return View::make('users.signup');
   }
 
   /**

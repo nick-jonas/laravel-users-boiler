@@ -12,4 +12,5 @@
 */
 
 Route::controller('users', 'UserController');
+Route::controller('password', 'RemindersController');
 Route::controller('/', 'HomeController');

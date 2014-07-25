@@ -7,5 +7,6 @@ return array(
     'loginFailed' => 'Login failed. Invalid username or password',
     'name' => 'Name',
     'yourName' => 'Your name',
-    'confirmPassword' => 'Confirm Password'
+    'confirmPassword' => 'Confirm Password',
+    'forgotPassword' => 'Forgot Password?'
 );
