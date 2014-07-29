@@ -1,11 +1,11 @@
-## Laravel User Boilerplate
+## Laravel User Account Boilerplate
 
-This is a boilerplate framework built on top of [Laravel](http://laravel.com/docs) for creating user profiles, using social and manual login/signup methods.
+This is a boilerplate framework built on top of [Laravel](http://laravel.com/docs) for creating user accounts, using social & manual login/signup, and password recovery methods.
 
 ## Functionality
 
  * User login (manual, Facebook, Twitter)
- * User signup (manula, Facebook, Twitter)
+ * User signup (manual, Facebook, Twitter)
  * User logout
  * Password reset
 
@@ -29,11 +29,6 @@ This is a boilerplate framework built on top of [Laravel](http://laravel.com/doc
 'password' => 'your_password',
 'from' => array('address' => 'yourname@gmail.com', 'name' => 'Sender Name')
 ```
-
-## To-do
-
-- add social logins: https://github.com/artdarek/oauth-4-laravel
-- add rocketeer deployment?
 
 
 ## Laravel Official Documentation
