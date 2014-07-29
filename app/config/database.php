@@ -56,10 +56,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => $database_url["host"],
+			'host'      => isset($database_url["host"]) ? $database_url["host"] : '',
 			'database'  => substr($database_url["path"],1),
-			'username'  => $database_url["user"],
-			'password'  => $database_url["pass"],
+			'username'  => isset($database_url["user"]) ? $database_url["user"] : '',
+			'password'  => isset($database_url["pass"]) ? $database_url["pass"] : '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

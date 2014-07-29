@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="form content">
-{{ Form::open(array('url' => 'users/login')) }}
+{{ Form::open(array('url' => 'account/login')) }}
     <h1>@lang('users.login')</h1>
 
     @if($errors->count() > 0)

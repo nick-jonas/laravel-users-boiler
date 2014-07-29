@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="form content signup">
-{{ Form::open(array('url' => 'users/signup')) }}
+{{ Form::open(array('url' => 'account/signup')) }}
 <h1>@lang('users.signup')</h1>
 
 <div class="left-col">
