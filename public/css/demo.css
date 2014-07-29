@@ -82,7 +82,7 @@ ul, li{
   color: #fff;
   overflow: visible;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   top: 0px;
 }
 .container{
