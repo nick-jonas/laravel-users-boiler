@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('content')
 
+<div class="form content">
 {{ Form::open(array('url' => 'users/login')) }}
     <h1>@lang('users.login')</h1>
 
@@ -27,9 +28,16 @@
         {{ Form::password('password') }}
     </p>
 
-    <p>{{ Form::submit(Lang::get('users.login')) }}</p>
+    <p>{{ Form::submit(Lang::get('users.login'), array('class' => 'big-btn login')) }}</p>
 {{ Form::close() }}
 
-<a href="{{action('RemindersController@getRemind')}}">{{Lang::get('users.forgotPassword')}}</a>
 
+<a class="big-btn login-twitter" href="{{action('AccountController@getLoginWithTwitter')}}">{{Lang::get('users.loginWithTwitter')}}</a>
+
+<a class="big-btn login-facebook" href="{{action('AccountController@getLoginWithFacebook')}}">{{Lang::get('users.loginWithFacebook')}}</a>
+
+<a class="forgot-password" href="{{action('RemindersController@getRemind')}}">{{Lang::get('users.forgotPassword')}}</a>
+
+</div>
+<!-- end content -->
 @stop

@@ -1,0 +1,248 @@
+body {
+  background-color: #f2f2f2;
+  font-size: 14px;
+  font-family: "Roman","Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+  margin:0;
+}
+
+input:focus, textarea { outline: none !important; }
+
+img{
+  max-width:100%;
+}
+
+a, a:visited {
+  color: #666;
+  text-decoration:none;
+}
+
+a:hover{
+  color:#000;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 16px 0 0 0;
+}
+ul, li{
+  margin:0px;
+  padding:0px;
+}
+
+.content-wrapper{
+  margin-top:50px;
+}
+
+.user-img{
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom:30px;
+}
+.user-img.actual-user{
+  width:200px;
+  height:200px;
+  border-radius:50% 50%;
+  border:5px solid black;
+  overflow:hidden;
+}
+.user-img.actual-user img{
+  max-width: inherit;
+}
+
+.content {
+  width: 550px;
+  height: 200px;
+  -webkit-transform:translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align:center;
+  margin-top:-50px;
+}
+
+.welcome a:hover{
+  border-bottom:2px solid #666;
+  padding-bottom:1px;
+}
+
+.welcome h3, .welcome h5{
+  font-weight:400;
+}
+
+.nav{
+  position: fixed;
+  background: #000;
+  font-family: "Bold","Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  overflow: visible;
+  width: 100%;
+  z-index: 100;
+  top: 0px;
+}
+.container{
+  max-width: 940px;
+  padding: 0 1.06383%;
+  margin: 0 auto;
+}
+
+.nav-items{
+  padding-right:20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav-items.left{
+  float:left;
+  padding-left:10px;
+}
+.nav-items.right{
+  width: 500px;
+  float: right;
+  text-align: right;
+}
+.nav-item{
+  list-style-type: none;
+  display:inline-block;
+  vertical-align: middle;
+  line-height: 2;
+  text-align:right;
+  font-weight:800;
+  margin:0 10px;
+}
+.nav-item .avatar_url{
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5em;
+  background: #e6e6e6;
+}
+.nav-item a{
+  color: #e6e6e6;
+  padding: 0 0.5em 0 0.5em;
+  display:block;
+  line-height: 3em;
+  font-weight: 800;
+}
+.nav-item a svg path{
+  fill: #e6e6e6;
+}
+.nav-item a:hover{
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+.nav-item a:hover svg path{
+  fill:#FFF;
+}
+
+.login-btn svg{
+  width: 26px;
+  height: 12px;
+  position: relative;
+  top: 1px;
+  padding-right:7px;
+}
+
+.signup-btn svg{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  padding-right: 2px;
+}
+
+.form.content{
+  background:white;
+  height:auto;
+  padding:50px 0;
+  margin:0;
+}
+.form.content h1{
+  font-weight:300;
+  font-size:3.0em;
+  margin-bottom:30px;
+  margin-top:0px;
+}
+.form.content p{
+  text-align: left;
+  max-width: 300px;
+  margin: 20px auto;
+}
+.form.content p label{
+  width: 80px;
+  display: inline-block;
+}
+.form.content input[type="text"], .form.content input[type="password"]{
+  width: 200px;
+  height: 30px;
+  font-size: 1.1em;
+  padding-left: 10px;
+}
+
+.big-btn{
+  margin: 0 auto;
+  padding: 15px 0;
+  background: #e6e6e6;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  color: #666;
+  width: 100%;
+  height: auto;
+  min-width: 220px;
+  max-width: 70%;
+  font-size: 20px;
+  font-family: "Roman","Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-weight: normal;
+  border:none;
+  position:relative;
+}
+.big-btn:hover{
+  background:#000;
+  color:#FFF;
+}
+
+a.login-twitter{
+  background: #4099ff;
+  color: #fff;
+  margin-top:40px;
+}
+a.login-twitter:before{
+  content:'';
+  border-top:1px #e6e6e6 solid;
+  position:absolute;
+  left:0;
+  width:100%;
+  top:-20px;
+}
+
+a.login-facebook{
+  margin-top:10px;
+  background: #3b5998;
+  color: #fff;
+}
+
+.forgot-password{
+  top: 23px;
+  position: relative;
+}
+
+.form.content.signup{
+  width:620px;
+  padding:40px;
+}
+.left-col{
+  float:left;
+}
+.right-col{
+  display:inline-block;
+}

@@ -11,6 +11,24 @@
 |
 */
 
-Route::controller('users', 'UserController');
+
+/**
+ * Social Authentication
+ *
+ * Authenticate via a social provider
+ */
+
+Route::get('user/{id}', function($id){
+  $user = User::findOrFail($id);
+  $isMe = false;
+  if(Auth::check()){
+    if(Auth::user()->id == $id){
+      $isMe = true;
+    }
+  }
+  return View::make('user.profile')->with(array('data' => $user, 'isMe' => $isMe));
+});
+
+Route::controller('account', 'AccountController');
 Route::controller('password', 'RemindersController');
 Route::controller('/', 'HomeController');
