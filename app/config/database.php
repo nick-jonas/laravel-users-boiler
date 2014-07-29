@@ -1,5 +1,7 @@
 <?php
 
+$database_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
 return array(
 
 	/*
@@ -54,10 +56,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'host'      => $database_url["host"],
+			'database'  => substr($database_url["path"],1),
+			'username'  => $database_url["user"],
+			'password'  => $database_url["pass"],
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
